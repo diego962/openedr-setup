@@ -18,7 +18,7 @@ function CreateProfile {
 }
 
 function InstallOpenEDR {
-    IWR -Uri 'https://github.com/ComodoSecurity/openedr/releases/download/2.0.0.0/OpenEDR-installation-2.0.0.0-x64.msi' -OutFile $PathEDRMsi
+    IWR -Uri 'https://github.com/ComodoSecurity/openedr/releases/download/2.0.0.0/OpenEDR-installation-2.0.0.0-x64.msi' -UseBasicParsing -OutFile $PathEDRMsi
 
     Start-Process $PathEDRMsi
 }
