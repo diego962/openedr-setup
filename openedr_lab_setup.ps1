@@ -1,7 +1,7 @@
 
 $User = $env:Username
 $PathEDRMsi = "C:\Users\$User\Downloads\OpenEDR-installation-2.0.0.0-x64.msi"
-$PathProfile = $env:windir\System32\WindowsPowerShell\v1.0\atomicredteam.ps1
+$PathProfile = "$env:windir\System32\WindowsPowerShell\v1.0\profile.ps1"
 
 function ChangeExecutionPolicy {
     Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
@@ -18,7 +18,7 @@ function CreateProfile {
 }
 
 function InstallOpenEDR {
-    IWR -Uri 'https://github.com/ComodoSecurity/openedr/releases/download/2.0.0.0/OpenEDR-installation-2.0.0.0-x64.msi' -OutFile $PathEDR
+    IWR -Uri 'https://github.com/ComodoSecurity/openedr/releases/download/2.0.0.0/OpenEDR-installation-2.0.0.0-x64.msi' -OutFile $PathEDRMsi
 
     Start-Process $PathEDRMsi
 }
