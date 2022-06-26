@@ -16,5 +16,5 @@ A utilização desse script deve ser realizada em um ambiente de testes de prefe
 
 # Referências
 
-[^1]: https://github.com/redcanaryco/atomic-red-team
-[^2]: https://github.com/ComodoSecurity/openedr
+* https://github.com/redcanaryco/atomic-red-team
+* https://github.com/ComodoSecurity/openedr
